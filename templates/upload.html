@@ -1,0 +1,27 @@
+{% load static %}   
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> upload csv file </title>
+       
+        
+   
+        <body>
+    
+            <div class="container">
+                <h2>Upload csv file</h2>
+        
+                <form action="" method="post" enctype='multipart/form-data'>
+                    {% csrf_token %}
+                    <input type='text' name='file_name'>
+                    <input type='file' name='myfile' >
+                        <button  type="submit" >File Upload</button>
+                        
+                        
+                </form>  
+            </div>
+        </body>
+        
+        </html>
+        
